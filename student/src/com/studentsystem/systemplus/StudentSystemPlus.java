@@ -6,11 +6,14 @@ import java.util.Scanner;
 
 public class StudentSystemPlus {
 
-    private final ArrayList<User> list;
+    private static final  ArrayList<User> list = new ArrayList<>();
     private final Scanner scanner;
 
+    static{
+        list.add(new User("admin", "123456", null, null));
+    }
     public StudentSystemPlus() {
-        this.list = new ArrayList<>();
+//        this.list = new ArrayList<>();
         this.scanner = new Scanner(System.in);
     }
 
